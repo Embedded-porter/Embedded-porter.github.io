@@ -1,0 +1,13 @@
+/* 个人信息卡片背景图 */
+[data-theme="light"] #aside-content > .card-widget.card-info {
+    background-image: url(https://tmlbolg.oss-cn-guangzhou.aliyuncs.com/img/light.png);
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+    background-size: 100%;
+  }
+  [data-theme="dark"] #aside-content > .card-widget.card-info {
+    background-image: url(https://tmlbolg.oss-cn-guangzhou.aliyuncs.com/img/5C9F6076F602E5366041C86D9DB871CB.jpg);
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+    background-size: 100%;
+}
