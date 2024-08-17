@@ -1113,13 +1113,13 @@ function changeMouseMode() {
 var now1 = new Date();
 
 function createtime1() {
-  var grt = new Date("08/09/2022 00:00:00"); //此处修改你的建站时间或者网站上线时间
+  var grt = new Date("08/17/2024 00:00:00"); //此处修改你的建站时间或者网站上线时间
   now1.setTime(now1.getTime() + 250);
   var days = (now1 - grt) / 1000 / 60 / 60 / 24;
   var dnum = Math.floor(days);
 
   var ascll = [
-    `欢迎来到Fomalhaut🥝の小家!`,
+    `欢迎来到Beyond Code🥝の小家!`,
     `Future is now 🍭🍭🍭`,
     `
         
@@ -1133,7 +1133,7 @@ function createtime1() {
     "小站已经苟活",
     dnum,
     "天啦!",
-    "©2022 By Fomalhaut",
+    "©2022 By Beyond Code",
   ];
 
   setTimeout(
@@ -1172,7 +1172,7 @@ function createtime2() {
   setTimeout(
     console.warn.bind(
       console,
-      "%c ⚡ Powered by Fomalhaut🥝 %c 你正在访问Fomalhaut🥝の小家",
+      "%c ⚡ Powered by Fomalhaut🥝 %c 你正在访问Beyond Code🥝の小家",
       "color:white; background-color:#f0ad4e",
       ""
     )
@@ -2804,8 +2804,8 @@ function createtime() {
   let currentTimeHtml = "";
   (currentTimeHtml =
     hnum < 18 && hnum >= 9
-      ? `<img class='boardsign' src='https://lskypro.acozycotage.net/Fomalhaut/badge/F小屋-科研摸鱼中.svg' title='什么时候能够实现财富自由呀~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${dis} 千米，约为 ${unit} 个天文单位 🚀</div>`
-      : `<img class='boardsign' src='https://lskypro.acozycotage.net/Fomalhaut/badge/F小屋-下班休息啦.svg' title='下班了就该开开心心地玩耍~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${dis} 千米，约为 ${unit} 个天文单位 🚀</div>`),
+      ? `<img class='boardsign' src='https://img.shields.io/badge/工作摸鱼中-6adea8?style=social&logo=cakephp' title='什么时候能够实现财富自由呀~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${dis} 千米，约为 ${unit} 个天文单位 🚀</div>`
+      : `<img class='boardsign' src='https://img.shields.io/badge/小店打烊了-6adea8?style=social&logo=coffeescript' title='下班了就该开开心心地玩耍~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${dis} 千米，约为 ${unit} 个天文单位 🚀</div>`),
     document.getElementById("workboard") &&
     (document.getElementById("workboard").innerHTML = currentTimeHtml);
 }
@@ -2813,7 +2813,6 @@ function createtime() {
 setInterval(() => {
   createtime();
 }, 1000);
-
 /*页脚计时器 end */
 
 //----------------------------------------------------------------
@@ -3099,48 +3098,6 @@ function setBlur() {
   }
 }
 
-// 更换背景(原来Leonus的代码)
-// 存数据
-// name：命名 data：数据
-// function saveData(name, data) {
-//   localStorage.setItem(name, JSON.stringify({ time: Date.now(), data: data }));
-// }
-// 取数据
-// name：命名 time：过期时长,单位分钟,如传入30,即加载数据时如果超出30分钟返回0,否则返回数据
-// function loadData(name, time) {
-//   let d = JSON.parse(localStorage.getItem(name));
-//   // 过期或有错误返回 0 否则返回数据
-//   if (d) {
-//     let t = Date.now() - d.time;
-//     if (t < time * 60 * 1000 && t > -1) return d.data;
-//   }
-//   return 0;
-// }
-// 上面两个函数如果你有其他需要存取数据的功能，也可以直接使用
-// 读取背景
-// try {
-//   let data = loadData("blogbg", 1440);
-//   if (data) changeBg(data, 1);
-//   else localStorage.removeItem("blogbg");
-// } catch (error) {
-//   localStorage.removeItem("blogbg");
-// }
-// 切换背景函数
-// 此处的flag是为了每次读取时都重新存储一次,导致过期时间不稳定
-// 如果flag为0则存储,即设置背景. 为1则不存储,即每次加载自动读取背景.
-// function changeBg(s, flag) {
-//   let bg = document.getElementById("web_bg");
-//   if (s.charAt(0) == "#") {
-//     bg.style.backgroundColor = s;
-//     bg.style.backgroundImage = "none";
-//   } else {
-//     bg.style.backgroundImage = s
-//   };
-//   if (!flag) {
-//     saveData("blogbg", s);
-//   }
-// }
-
 // 切换自定义颜色
 var defineColor = localStorage.getItem("blogbg") && localStorage.getItem("blogbg").charAt(0) == '#' ? localStorage.getItem("blogbg") : '#F4D88A';
 function changeBgColor() {
@@ -3174,10 +3131,10 @@ if (localStorage.getItem("blogbg") != undefined) {
   setBg(localStorage.getItem("blogbg"));
 } else {
   document.getElementById("defineBg").innerText = `:root{
-    --default-bg: url(https://lskypro.acozycotage.net/Fomalhaut/img/dm14.webp);
-    --darkmode-bg:url(https://lskypro.acozycotage.net/Fomalhaut/img/yuanshen1.webp);
-    --mobileday-bg: url(https://lskypro.acozycotage.net/Fomalhaut/img/snow.webp);
-    --mobilenight-bg: url(https://lskypro.acozycotage.net/Fomalhaut/img/mb8.webp);
+    --default-bg: url(https://tmlbolg.oss-cn-guangzhou.aliyuncs.com/img/BAE4349912BAF3E15B319AE5805BFC8E.jpg);
+    --darkmode-bg:url(https://tmlbolg.oss-cn-guangzhou.aliyuncs.com/img/4EB255E1FB257A27A45EC60885CB599E.jpg);
+    --mobileday-bg: url(https://tmlbolg.oss-cn-guangzhou.aliyuncs.com/img/D4C8620E58035A86A9DAD08941A06851.jpg);
+    --mobilenight-bg: url(https://tmlbolg.oss-cn-guangzhou.aliyuncs.com/img/0371386577D3BE0D9C0587EBF2A1E8BC.jpg);
   }`;
 }
 // 切换背景主函数
