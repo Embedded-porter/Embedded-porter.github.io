@@ -8,7 +8,7 @@
       <link href="/2024/08/15/BlogNote-md/"/>
       <url>/2024/08/15/BlogNote-md/</url>
       
-        <content type="html"><![CDATA[<ol><li>新建文章：<code>hexo new &quot;xx.md&quot;</code></li><li>添加标签：<code>hexo new page xxx</code></li><li>categories: <code>文章的分类</code></li><li>tags: <code>文章标签</code></li><li>swiper_index：<code>文章展示权重(值越大越靠前)</code></li><li>更新指令：<code> hexo cl; hexo g; hexo s</code></li><li>上传指令：<code>hexo g; hexo d</code></li><li></li></ol>]]></content>
+        <content type="html"><![CDATA[<ol><li>新建文章：<code>hexo new &quot;xx.md&quot;</code></li><li>添加标签：<code>hexo new page xxx</code></li><li>categories: <code>文章的分类</code></li><li>tags: <code>文章标签</code></li><li>swiper_index：<code>文章展示权重(值越大越靠前)</code></li><li>更新指令：<code>hexo cl; hexo g; hexo s</code></li><li>上传指令：<code>hexo g; hexo d</code></li><li>asdsad</li></ol>]]></content>
       
       
       <categories>

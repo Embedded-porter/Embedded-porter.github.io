@@ -6,7 +6,7 @@
   <link href="https://embedded-porter.github.io/atom.xml" rel="self"/>
   
   <link href="https://embedded-porter.github.io/"/>
-  <updated>2024-08-17T16:24:15.925Z</updated>
+  <updated>2024-08-17T16:28:54.265Z</updated>
   <id>https://embedded-porter.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://embedded-porter.github.io/2024/08/15/BlogNote-md/"/>
     <id>https://embedded-porter.github.io/2024/08/15/BlogNote-md/</id>
     <published>2024-08-15T10:29:18.000Z</published>
-    <updated>2024-08-17T16:24:15.925Z</updated>
+    <updated>2024-08-17T16:28:54.265Z</updated>
     
-    <content type="html"><![CDATA[<ol><li>新建文章：<code>hexo new &quot;xx.md&quot;</code></li><li>添加标签：<code>hexo new page xxx</code></li><li>categories: <code>文章的分类</code></li><li>tags: <code>文章标签</code></li><li>swiper_index：<code>文章展示权重(值越大越靠前)</code></li><li>更新指令：<code> hexo cl; hexo g; hexo s</code></li><li>上传指令：<code>hexo g; hexo d</code></li><li></li></ol>]]></content>
+    <content type="html"><![CDATA[<ol><li>新建文章：<code>hexo new &quot;xx.md&quot;</code></li><li>添加标签：<code>hexo new page xxx</code></li><li>categories: <code>文章的分类</code></li><li>tags: <code>文章标签</code></li><li>swiper_index：<code>文章展示权重(值越大越靠前)</code></li><li>更新指令：<code>hexo cl; hexo g; hexo s</code></li><li>上传指令：<code>hexo g; hexo d</code></li><li>asdsad</li></ol>]]></content>
     
     
       
