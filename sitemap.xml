@@ -2,9 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://embedded-porter.github.io/2024/08/19/%E7%AC%AC%E4%B8%80%E7%AB%A0%EF%BC%9A%E5%8D%95%E7%89%87%E6%9C%BA%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</loc>
+    
+    <lastmod>2024-08-18</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://embedded-porter.github.io/2024/08/15/BlogNote-md/</loc>
     
-    <lastmod>2024-08-17</lastmod>
+    <lastmod>2024-08-18</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -166,7 +175,7 @@
 
   <url>
     <loc>https://embedded-porter.github.io/</loc>
-    <lastmod>2024-08-17</lastmod>
+    <lastmod>2024-08-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -174,28 +183,14 @@
   
   <url>
     <loc>https://embedded-porter.github.io/tags/Markdown/</loc>
-    <lastmod>2024-08-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://embedded-porter.github.io/tags/%E5%A4%96%E6%8C%82%E6%A0%87%E7%AD%BE/</loc>
-    <lastmod>2024-08-17</lastmod>
+    <lastmod>2024-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://embedded-porter.github.io/tags/Note/</loc>
-    <lastmod>2024-08-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://embedded-porter.github.io/tags/linux/</loc>
-    <lastmod>2024-08-17</lastmod>
+    <lastmod>2024-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -203,36 +198,22 @@
 
   
   <url>
-    <loc>https://embedded-porter.github.io/categories/%E6%BC%94%E7%A4%BA/</loc>
-    <lastmod>2024-08-17</lastmod>
+    <loc>https://embedded-porter.github.io/categories/%E5%8D%95%E7%89%87%E6%9C%BA%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2024-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://embedded-porter.github.io/categories/Linux%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2024-08-17</lastmod>
+    <loc>https://embedded-porter.github.io/categories/%E9%9A%8F%E6%83%B3%E5%BD%95/</loc>
+    <lastmod>2024-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://embedded-porter.github.io/categories/Linux%E6%95%99%E7%A8%8B/%E5%8D%95%E7%89%87%E6%9C%BA%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2024-08-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://embedded-porter.github.io/categories/Linux%E6%95%99%E7%A8%8B/%E5%8D%95%E7%89%87%E6%9C%BA%E6%95%99%E7%A8%8B/%E5%9F%BA%E7%A1%80%E5%8A%9F%E7%BB%83%E4%B9%A0/</loc>
-    <lastmod>2024-08-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://embedded-porter.github.io/categories/Linux%E6%95%99%E7%A8%8B/%E5%8D%95%E7%89%87%E6%9C%BA%E6%95%99%E7%A8%8B/%E5%9F%BA%E7%A1%80%E5%8A%9F%E7%BB%83%E4%B9%A0/%E9%9A%8F%E6%83%B3%E5%BD%95/</loc>
-    <lastmod>2024-08-17</lastmod>
+    <loc>https://embedded-porter.github.io/categories/Markdown%E8%AF%AD%E6%B3%95/</loc>
+    <lastmod>2024-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
