@@ -4,7 +4,7 @@
   <url>
     <loc>https://embedded-porter.github.io/2024/08/20/%E9%9A%8F%E6%83%B3%E5%BD%95-Makefile/</loc>
     
-    <lastmod>2024-08-20</lastmod>
+    <lastmod>2024-08-21</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -12,15 +12,6 @@
   
   <url>
     <loc>https://embedded-porter.github.io/2024/08/19/%E7%AC%AC%E4%B8%80%E7%AB%A0%EF%BC%9A%E5%8D%95%E7%89%87%E6%9C%BA%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</loc>
-    
-    <lastmod>2024-08-18</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://embedded-porter.github.io/2024/08/15/BlogNote-md/</loc>
     
     <lastmod>2024-08-18</lastmod>
     
@@ -192,13 +183,6 @@
   
   <url>
     <loc>https://embedded-porter.github.io/tags/Markdown/</loc>
-    <lastmod>2024-08-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://embedded-porter.github.io/tags/Note/</loc>
     <lastmod>2024-08-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
