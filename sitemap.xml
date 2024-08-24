@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://embedded-porter.github.io/2024/08/19/%E7%AC%AC%E4%B8%80%E7%AB%A0%EF%BC%9A%E5%8D%95%E7%89%87%E6%9C%BA%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</loc>
+    <loc>https://embedded-porter.github.io/2024/08/24/ESP32%E9%A9%B1%E5%8A%A8%E6%B8%A9%E5%BA%A6%E4%BC%A0%E6%84%9F%E5%99%A8/</loc>
     
     <lastmod>2024-08-24</lastmod>
     
@@ -12,6 +12,15 @@
   
   <url>
     <loc>https://embedded-porter.github.io/2024/08/24/%E5%AE%88%E6%8A%A4%E8%BF%9B%E7%A8%8B/</loc>
+    
+    <lastmod>2024-08-24</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://embedded-porter.github.io/2024/08/19/%E7%AC%AC%E4%B8%80%E7%AB%A0%EF%BC%9A%E5%8D%95%E7%89%87%E6%9C%BA%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</loc>
     
     <lastmod>2024-08-24</lastmod>
     
@@ -218,6 +227,13 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>https://embedded-porter.github.io/tags/ESP32%E5%8D%95%E7%89%87%E6%9C%BA/</loc>
+    <lastmod>2024-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
   
   <url>
@@ -243,6 +259,13 @@
   
   <url>
     <loc>https://embedded-porter.github.io/categories/linux%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2024-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://embedded-porter.github.io/categories/%E5%8D%95%E7%89%87%E6%9C%BA%E5%BC%80%E5%8F%91/</loc>
     <lastmod>2024-08-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
