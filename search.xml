@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>ESP32S3-GDB调试</title>
+      <link href="/2024/08/24/ESP32S3-GDB%E8%B0%83%E8%AF%95/"/>
+      <url>/2024/08/24/ESP32S3-GDB%E8%B0%83%E8%AF%95/</url>
+      
+        <content type="html"><![CDATA[<h1 id="ESP32-S3-GDB调试"><a href="#ESP32-S3-GDB调试" class="headerlink" title="ESP32-S3 GDB调试"></a>ESP32-S3 GDB调试</h1><h2 id="第一步：检查硬件是否连接好"><a href="#第一步：检查硬件是否连接好" class="headerlink" title="第一步：检查硬件是否连接好"></a>第一步：检查硬件是否连接好</h2><blockquote><p>ESP32-S3 GDB调试硬件依赖于内部集成了JATG</p></blockquote><p><img src="https://tmlbolg.oss-cn-guangzhou.aliyuncs.com/img/image-20240723220549540.png" alt="image-20240723220549540"></p><h2 id="第二部：编写一个OpenOCD-配置文件"><a href="#第二部：编写一个OpenOCD-配置文件" class="headerlink" title="第二部：编写一个OpenOCD 配置文件"></a>第二部：编写一个OpenOCD 配置文件</h2><p>命名：gdbinit</p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">set</span> remotetimeout <span class="number">100</span></span><br><span class="line">target remote :<span class="number">3333</span></span><br><span class="line"><span class="built_in">set</span> remote hardware-watchpoint-limit <span class="number">2</span></span><br><span class="line">mon reset halt</span><br><span class="line">maintenance flush <span class="keyword">register</span>-cache</span><br><span class="line">thb app_main</span><br><span class="line">c</span><br></pre></td></tr></table></figure><p>如下图</p><p><img src="https://tmlbolg.oss-cn-guangzhou.aliyuncs.com/img/image-20240723221404368.png" alt="image-20240723221404368"></p><h2 id="第三部：打开两个ESP-IDF终端，分别启动-OpenOCD-调试器和启动-GDB"><a href="#第三部：打开两个ESP-IDF终端，分别启动-OpenOCD-调试器和启动-GDB" class="headerlink" title="第三部：打开两个ESP-IDF终端，分别启动 OpenOCD 调试器和启动 GDB"></a>第三部：打开两个ESP-IDF终端，分别启动 OpenOCD 调试器和启动 GDB</h2><ol><li><p>打开两个ESP-IDF终端，进入你项目文件夹<img src="https://tmlbolg.oss-cn-guangzhou.aliyuncs.com/img/image-20240723222445575.png" alt="image-20240723222445575"></p></li><li><p>输入指令：<code>openocd -f board/esp32s3-builtin.cfg</code> 启动 OpenOCD 调试器</p></li></ol><p><img src="https://tmlbolg.oss-cn-guangzhou.aliyuncs.com/img/image-20240723222605085.png" alt="image-20240723222605085"></p><ol><li>输入指令：<code>xtensa-esp32s3-elf-gdb -x gdbinit build/Project.elf</code>（Project 更换成自己的项目成的.elf，不知道自己工程生成.elf文件名字，看下图<a href="#1">1-1</a>）</li></ol><p><img src="https://tmlbolg.oss-cn-guangzhou.aliyuncs.com/img/image-20240723222656221.png" alt="image-20240723222656221"></p><p>可以看到我们可以使用GDB调试我们的程序了</p><p><img src="https://tmlbolg.oss-cn-guangzhou.aliyuncs.com/img/image-20240723222959393.png" alt="image-20240723222959393"></p><p><img src="https://tmlbolg.oss-cn-guangzhou.aliyuncs.com/img/image-20240723223024840.png" alt="image-20240723223024840"></p><p>可以看到跟我们的代码是一致的</p><h2 id="查看-elf文件名"><a href="#查看-elf文件名" class="headerlink" title="查看.elf文件名"></a>查看.elf文件名</h2><p><img src="https://tmlbolg.oss-cn-guangzhou.aliyuncs.com/img/image-20240723223335258.png" alt="image-20240723223335258" title="这是生成.elf文件名说明"></p><div style="text-align: center;">  <a id="1"></a>  图 1-1</div><p><span id="1"> </span></p><ol><li>GDB调试指令，这个可以去B站查看其他博主的视频哈</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 单片机教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> ESP32单片机 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>ESP32驱动温度传感器</title>
       <link href="/2024/08/24/ESP32%E9%A9%B1%E5%8A%A8%E6%B8%A9%E5%BA%A6%E4%BC%A0%E6%84%9F%E5%99%A8/"/>
       <url>/2024/08/24/ESP32%E9%A9%B1%E5%8A%A8%E6%B8%A9%E5%BA%A6%E4%BC%A0%E6%84%9F%E5%99%A8/</url>
