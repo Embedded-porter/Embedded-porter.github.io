@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>QT工程部署和打包</title>
+      <link href="/2024/09/11/QT%E5%B7%A5%E7%A8%8B%E9%83%A8%E7%BD%B2%E5%92%8C%E6%89%93%E5%8C%85/"/>
+      <url>/2024/09/11/QT%E5%B7%A5%E7%A8%8B%E9%83%A8%E7%BD%B2%E5%92%8C%E6%89%93%E5%8C%85/</url>
+      
+        <content type="html"><![CDATA[<h1>QT的部署</h1><h2 id="第一步：模式切换">第一步：模式切换</h2><p>将debug模式切换到release模式。然后编译</p><p><img src="https://tmlbolg.oss-cn-guangzhou.aliyuncs.com/img/image-20240911000859479.png" alt="image-20240911000859479"></p><h2 id="第二步：找到release模式关键的文件夹（记得先编译一遍）">第二步：找到release模式关键的文件夹（记得先编译一遍）</h2><p><img src="https://tmlbolg.oss-cn-guangzhou.aliyuncs.com/img/image-20240911001118960.png" alt="image-20240911001118960"></p><h2 id="第三步：改一下图标">第三步：改一下图标</h2><ol><li>先把图标复制到工程目录下，格式为：<code>.ico</code></li></ol><p><img src="https://tmlbolg.oss-cn-guangzhou.aliyuncs.com/img/image-20240911001751756.png" alt="image-20240911001751756"></p><ol start="2"><li>然后在工程中添加图标，记得把后缀添加上</li></ol><p><img src="https://tmlbolg.oss-cn-guangzhou.aliyuncs.com/img/image-20240911001826345.png" alt="image-20240911001826345"></p><h2 id="第四步：封包操作，需要用到控制台">第四步：封包操作，需要用到控制台</h2><p>1.打开控制台</p><p><img src="https://tmlbolg.oss-cn-guangzhou.aliyuncs.com/img/image-20240911002125026.png" alt="image-20240911002125026"></p><ol start="2"><li><p>新建一个文件夹，然后把刚刚生成的release中的<code>.exe</code>文件直接复制到新创建的文件夹中</p><p><img src="https://tmlbolg.oss-cn-guangzhou.aliyuncs.com/img/image-20240911002424802.png" alt="image-20240911002424802"></p></li><li><p>通过命令让控制台进入到我们刚刚新创建的文件夹中去，指令：<code>cd /d 文件夹路径</code></p></li></ol><p><img src="https://tmlbolg.oss-cn-guangzhou.aliyuncs.com/img/image-20240911002833676.png" alt="image-20240911002833676"></p><ol start="4"><li>执行封包命令：<code>windeployqt xx.exe</code>即可</li></ol><p><img src="https://tmlbolg.oss-cn-guangzhou.aliyuncs.com/img/image-20240911003102956.png" alt="image-20240911003102956"></p><ol start="5"><li>最终生成的文件如下：</li></ol><p>​     <img src="https://tmlbolg.oss-cn-guangzhou.aliyuncs.com/img/image-20240911003144167.png" alt="image-20240911003144167"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> linux教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> linux应用开发 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>ESP32S3-GDB调试</title>
       <link href="/2024/08/24/ESP32S3-GDB%E8%B0%83%E8%AF%95/"/>
       <url>/2024/08/24/ESP32S3-GDB%E8%B0%83%E8%AF%95/</url>
