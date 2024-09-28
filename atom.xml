@@ -6,7 +6,7 @@
   <link href="https://embedded-porter.github.io/atom.xml" rel="self"/>
   
   <link href="https://embedded-porter.github.io/"/>
-  <updated>2024-09-28T08:02:40.376Z</updated>
+  <updated>2024-09-28T08:04:43.547Z</updated>
   <id>https://embedded-porter.github.io/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>LVGL显示GIF.md</title>
-    <link href="https://embedded-porter.github.io/2024/09/28/LVGL%E6%98%BE%E7%A4%BAGIF-md/"/>
-    <id>https://embedded-porter.github.io/2024/09/28/LVGL%E6%98%BE%E7%A4%BAGIF-md/</id>
+    <link href="https://embedded-porter.github.io/2024/09/28/LVGL%E6%98%BE%E7%A4%BAGIF/"/>
+    <id>https://embedded-porter.github.io/2024/09/28/LVGL%E6%98%BE%E7%A4%BAGIF/</id>
     <published>2024-09-28T07:25:15.000Z</published>
-    <updated>2024-09-28T08:02:40.376Z</updated>
+    <updated>2024-09-28T08:04:43.547Z</updated>
     
     <content type="html"><![CDATA[<h1>LVGL显示GIF动态图片</h1><h2 id="制作表情GIF图">制作表情GIF图</h2><h3 id="在线gif制作工具">在线gif制作工具</h3><p><a href="https://ezgif.com">https://ezgif.com</a>制作gif格式的文件</p><p><img src="https://tmlbolg.oss-cn-guangzhou.aliyuncs.com/img/image-20240928153039581.png" alt="image-20240928153039581"></p><h4 id="使用方法">使用方法</h4><ol><li>首先要有表情包的video,类似下面的文件</li></ol><p><img src="https://tmlbolg.oss-cn-guangzhou.aliyuncs.com/img/image-20240928153704581.png" alt="image-20240928153704581"></p><ol start="2"><li>导入到在线工具中</li></ol><p><img src="https://tmlbolg.oss-cn-guangzhou.aliyuncs.com/img/image-20240928153749973.png" alt="image-20240928153749973"></p><ol start="3"><li><p><img src="https://tmlbolg.oss-cn-guangzhou.aliyuncs.com/img/image-20240928153958158.png" alt="image-20240928153958158"></p></li><li><p>调整GIF的特性</p><p><img src="https://tmlbolg.oss-cn-guangzhou.aliyuncs.com/img/image-20240928154326150.png" alt="image-20240928153958159"></p></li><li><p>调整完成，就可以保持了</p></li></ol><p><img src="https://tmlbolg.oss-cn-guangzhou.aliyuncs.com/img/image-20240928154654629.png" alt="image-20240928154654629"></p><ol start="6"><li>上面得到xxx.gif文件之后，就可以到LVGL官方网站将 <code>.gif</code>-&gt;<code>.c</code>文件的数据了</li></ol><h2 id="在线-gif文件转换成-c文件（LVGL官方工具）">在线.gif文件转换成.c文件（LVGL官方工具）</h2><p><a href="https://lvgl.io/tools/imageconverter">https://lvgl.io/tools/imageconverter</a></p><p><img src="https://tmlbolg.oss-cn-guangzhou.aliyuncs.com/img/image-20240928155340789.png" alt="image-20240928155340789"></p><h2 id="单片机上的使用">单片机上的使用</h2><h3 id="1-导入刚刚生成的-c文件">1. 导入刚刚生成的.c文件</h3><h3 id="2-调用方法">2.调用方法</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">LV_IMG_DECLARE(Excited);</span><br><span class="line"><span class="type">lv_obj_t</span> *ExcitedGIF;</span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">main</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line"> ExcitedGIF = lv_gif_create(ui_ExcitingFaceScreen);<span class="comment">/* 在ui_ExcitingFaceScreen 这个界面上创建 */</span></span><br><span class="line">    lv_gif_set_src(ExcitedGIF, &amp;Excited);  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="注意事项">注意事项</h2><ol><li><p>动图帧数控制、大小控制，文件压缩</p></li><li><p>RAM的粗略计算</p><figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">帧数*width*high + LV_deepth（颜色深度）</span><br><span class="line">比如:帧数:<span class="number">10</span>   width:<span class="number">320</span>   high:<span class="number">240</span>  </span><br><span class="line"><span class="number">10</span> * <span class="number">320</span> * <span class="number">240</span> + LV_deepth = 大约<span class="number">750</span>KB RAM占用</span><br></pre></td></tr></table></figure></li></ol>]]></content>
     
