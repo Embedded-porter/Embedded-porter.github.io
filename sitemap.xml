@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://embedded-porter.github.io/2025/02/24/%E7%99%BD%E5%AB%96MQTT%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
+    
+    <lastmod>2025-02-24</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://embedded-porter.github.io/2025/02/24/Docker%E6%90%AD%E5%BB%BAHomeAssistant/</loc>
     
     <lastmod>2025-02-24</lastmod>
